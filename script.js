@@ -191,7 +191,38 @@ if (customizeButton) {
 
 
 
+/******** ِActivty_Evaltion (activities) Page ********/
 
+ const form = document.querySelector('form');
+    const activitySelect = document.getElementById('activity');
+    const ratingInputs = document.querySelectorAll('input[name="rating"]');
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const selectedActivity = activitySelect.value;
+        let selectedRating = null;
+
+        ratingInputs.forEach(input => {
+            if (input.checked) {
+                selectedRating = input.value;
+            }
+        });
+
+        if (!selectedActivity) {
+            alert('Please select an activity.');
+            return;
+        }
+
+        if (!selectedRating) {
+            alert('Please select a rating.');
+            return;
+        }
+
+        alert(`Thank you for your feedback!\nYou're rating for activity#${selectedActivity} is ${selectedRating}`);
+
+        // نقل لصفحة الهوم
+       location.href = 'index.html';
+    });
 
 
 /******** ِActivty_Evaltion (activities) Page ********/
