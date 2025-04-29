@@ -1,54 +1,51 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
-    
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activity Evaluation</title>
      <link rel="stylesheet" href="style.css">
-
-
 </head>
 <body>
 
    <header>
     
     <div class="logo">
-        <img src="img\logo.png.png" alt="Website Logo">
+        <img src="img/logo.png.png" alt="Website Logo">
        
     </div>
      <nav>
-            <a href="index.html" accesskey="i" title="Alt + I (Windows) or Ctrl + Option + I (Mac)">Home</a>
-            <a href="Activities.html" accesskey="a" title="Alt + A (Windows) or Ctrl + Option + HA(Mac)"> Activities</a>
-            <a href="coaches.html" accesskey="c" title="Alt + C (Windows) or Ctrl + Option + C (Mac)">Coaches</a>
-            <div class="dropdown">
-                <a href="Parent_dashboard.html" accesskey="p" title="Alt + P (Windows) or Ctrl + Option + P (Mac)">Parents</a>
-                <div class="dropdown-content">
-                    <a href="Register_Kid.html" accesskey="r" title="Alt + R (Windows) or Ctrl + Option + R (Mac)">Registration</a>
-                    <a href="Activity_enroll.html" accesskey="n" title="Alt + N (Windows) or Ctrl + Option + N (Mac)">Enrollment</a>
-                    <a href="Activity_Evaluation.html" accesskey="v" title="Alt + V (Windows) or Ctrl + Option + V (Mac)">Evaluation</a>
-                </div>
+       <a href="index.html">Home</a>
+        <a href="Activities.html">Activities</a>
+        <a href="coaches.html">Coaches</a>
+          <div class="dropdown">
+            <a href="Parent_dashboard.html">Parents</a>
+           <div class="dropdown-content">
+                <a href="Register_Kid.html">Registration</a>
+                <a href="Activity_enroll.html">Enrollment</a>
+                <a href="Activity_Evaluation.html">Evaluation</a>
             </div>
-            <a href="Administrator_Dashboard.html" accesskey="b" title="Alt + B (Windows) or Ctrl + Option + B (Mac)">Administrator</a>
-        </nav>
+        </div>
+        <a href="Administrator_Dashboard.html">Administrator</a>
+    </nav>
 </header>
-
-
 
        
    
 
 
       <div class="breadcrumb"> <a href="index.html" class="breadcrumb">Home</a> &gt;  <a href="parent_dashboard.html">Parent</a> &gt;  <a href="Activity_Evaluation.html">Activity Evaluation</a></div>
-</nav>
+
 
     <div class="Evaluation-container">
         <h2 class="title">Activity Evaluation</h2>
     
-      <form id="evaluationForm">
+    
 
+       <form action="#" method="POST">
         
             <label for="activity">Choose Activity:</label>
-            <select  id="activity" name="activity" >
+            <select id="activity" name="activity" >
                 <option value="">-- Select Activity --</option>
                 <option value="Handicrafts">Handicrafts</option>
                 <option value="Theater Arts">Theater Arts</option>
@@ -61,17 +58,17 @@
           
             <h3>Rate Activity:</h3>
             <div class="stars">
-    <input type="radio" id="star5" name="rating" value="5">
-    <label for="star5">&#9733;</label>
-    <input type="radio" id="star4" name="rating" value="4">
-    <label for="star4">&#9733;</label>
-    <input type="radio" id="star3" name="rating" value="3">
-    <label for="star3">&#9733;</label>
-    <input type="radio" id="star2" name="rating" value="2">
-    <label for="star2">&#9733;</label>
-    <input type="radio" id="star1" name="rating" value="1">
-    <label for="star1">&#9733;</label>
-</div>
+                <input type="checkbox" id="star5" name="rating" value="5">
+                <label for="star5">&#9733;</label>
+                <input type="checkbox" id="star4" name="rating" value="4">
+                <label for="star4">&#9733;</label>
+                <input type="checkbox" id="star3" name="rating" value="3">
+                <label for="star3">&#9733;</label>
+                <input type="checkbox" id="star2" name="rating" value="2">
+                <label for="star2">&#9733;</label>
+                <input type="checkbox" id="star1" name="rating" value="1">
+                <label for="star1">&#9733;</label>
+            </div>
 
         
             <h3>Your Feedback:</h3>
@@ -82,20 +79,20 @@
 			<div class="Evaluation-button">
             <button  id="Evaluation-button" type="submit" >Done</button>
             </div>
-         
+      </form>
     </div>
 
-   <footer>
+    <footer>
     <div class="footer-content">
         <div class="footer-logo">
-            <img class="logo" src="img\logo.png.png" alt="Logo">
+            <img class="logo" src="img/logo.png.png" alt="Logo">
         </div>
 
         <div class="social-media">
             <h3>Social Media</h3>
-            <a href="https://x.com" target="_blank"><img class="icon"  src="img\X.png.png" alt="icon"> Activo.web</a>
-            <a href="https://instagram.com" target="_blank"><img class="icon"  src="img\Instagram.png.png" alt="icon"> Activo.web</a>
-            <a href="https://youtube.com" target="_blank"><img class="icon"  src="img\youtube.png.png" alt="icon"> Activo.channe;</a>
+            <a href="https://x.com"  target="_blank"><img class="icon"  src="img/X.png.png" alt="X Icon" > Activo.web</a>
+            <a href="https://instagram.com"  target="_blank"><img class="icon"  src="img/Instagram.png.png" alt="Instagram icon"> Activo.web</a>
+            <a href="https://youtube.com"  target="_blank"><img class="icon"  src="img/youtube.png.png" alt="youtube icon"> Activo.channel</a>
         </div>
 
 
@@ -113,6 +110,7 @@
 </footer>
 
   
-  <script src="script.js"></script>
+ <script src="script.js"></script>
+
 </body>
 </html>
