@@ -191,8 +191,7 @@ if (customizeButton) {
 
 
 
-/******** ِActivty_Evaltion (activities) Page ********/
-
+/*******************************************************/
  const form = document.querySelector('form');
     const activitySelect = document.getElementById('activity');
     const ratingInputs = document.querySelectorAll('input[name="rating"]');
@@ -223,8 +222,6 @@ if (customizeButton) {
         // نقل لصفحة الهوم
        location.href = 'index.html';
     });
-
-
 /******** ِActivty_Evaltion (activities) Page ********/
 
     document.addEventListener("DOMContentLoaded", function () {
